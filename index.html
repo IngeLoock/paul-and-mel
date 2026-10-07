@@ -608,23 +608,23 @@
 
   /* Desktop only: body copy in centred sections spans the full content
      column, so its edges line up with the cards, steps and plans around it.
-     Justified with the last line centred keeps it in step with the centred
-     headings above. Mobile is untouched. */
+     Centred (not justified) so word spacing stays natural. Mobile is untouched. */
   @media (min-width:781px){
     .section:not(.align-left) .section-inner > .lede{
       max-width:100% !important;
       width:100%;
       margin-left:0 !important;
       margin-right:0 !important;
-      text-align:justify;
-      text-align-last:center;
-      hyphens:manual;
+      text-align:center;
+      word-spacing:normal;
+      line-height:1.6;
     }
     .hero .sub{
       max-width:1080px;
       width:min(1080px, 100%);
-      text-align:justify;
-      text-align-last:center;
+      text-align:center;
+      word-spacing:normal;
+      line-height:1.6;
     }
   }
 </style>
